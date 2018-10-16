@@ -1,7 +1,7 @@
 
-const DetherCore = artifacts.require('./DetherCore.sol');
-const DetherBank = artifacts.require('./DetherBank.sol');
-const DetherToken = artifacts.require('./dth/DetherToken.sol');
+const DetherCore = artifacts.require('./AmishopCore.sol');
+const DetherBank = artifacts.require('./AmisBank.sol');
+const DetherToken = artifacts.require('./dth/AMIS.sol');
 const SmsCertifier = artifacts.require('./certifier/SmsCertifier.sol');
 const KycCertifier = artifacts.require('./certifier/KycCertifier.sol');
 const ExchangeRateOracle = artifacts.require('./ExchangeRateOracle.sol');

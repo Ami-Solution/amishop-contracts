@@ -1,4 +1,4 @@
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.25;
 
 import './certifier/Certifier.sol';
 import './DetherAccessControl.sol';
@@ -22,7 +22,7 @@ contract DetherSetup is DetherAccessControl  {
   // The bytes2 parameter wait for a country ID (ex: FR (0x4652 in hex) for france cf:README)
   mapping(bytes2 => bool) public openedCountryShop;
   mapping(bytes2 => bool) public openedCountryTeller;
-  // For registering in a zone you need to stake DTH
+  // For registering in a zone you need to stake AMIS
   // The price can differ by country
   // Uts now a fixed price by the CMO but the price will adjusted automatically
   // regarding different factor in the futur smart contract

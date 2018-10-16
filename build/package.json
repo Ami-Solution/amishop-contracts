@@ -1,6 +1,6 @@
 {
-  "name": "dethercontract",
-  "description": "Dether contract",
-  "version": "3.6.0",
-  "author": "dether.io"
+  "name": "amishop-contracts",
+  "description": "AmiShop contracts",
+  "version": "0.1.0",
+  "author": "amisolution"
 }
