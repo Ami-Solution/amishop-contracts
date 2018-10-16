@@ -4,6 +4,8 @@
 
 * Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me)
 
+* Ropsten AmishopCore: [https://ropsten.etherscan.io/tx/0x935265d30a9558034cc1af196d71e35f1b3843cb7561d46208e8b67f0972ed45](https://ropsten.etherscan.io/tx/0x935265d30a9558034cc1af196d71e35f1b3843cb7561d46208e8b67f0972ed45)
+
 * Kovan AmishopCore: [https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code](https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code)
 * Kovan SmsCertifier: [https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code](https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code)
 
