@@ -2,6 +2,8 @@
 
 [![Join the chat at https://gitter.im/erc20-amis/Lobby](https://badges.gitter.im/ami-solution/amishop.svg)](https://gitter.im/erc20-amis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me)
+
 ### Version 0.1.0b    
 This version is the MVP version, its not suppose to reflect our entire version describe in our white paper.    
 What this version is supposed to do:    
@@ -42,9 +44,11 @@ function getShop(address _shop) public view returns (
 This smart contract is supposed to be used just like that by the most Dapps possible to show their user where they could spend their crypto or buy or sell cryptos.    
 We keep moderator roles contralised for now, but we will use decentralised arbitration court later to be able to delete illegal shop for example.    
 To be able to register a shop or a teller, the ethereum user need to be `certified` we keep this role centralised as well for now but we'll use decentralised KYC services like uport soon.    
-To be certified user will either need to register their phone, or pass KYC.    
-To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by a moderator in a centralised way.    
-Centralised moderator role in the V0.1:   
+To become a certified subscriber will either need to register their phone, or pass KYC.    
+To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by the free decentralized marketplace as exposed in all the exchange offering Amis.    
+
+* The role of a Centralized moderator will be introduced with the v0.1.0b release: 
+**Main features:**
 -Set the licence price.
 -Delete fraudulent shop/teller.    
 -Open/close zone (country).    
@@ -55,12 +59,12 @@ To be integrated on the futures versions:
 -Affiliate/referal program   
 -Auction system on zone and category.  
 -Dynamic licence pricing    
--Decentralised moderation.    
--Decentralised KYC    
+-Decentralized moderation.    
+-Decentralized KYC    
 
-Upgradable VS unpgradable    
-Those smart contracts are unupgradable, only the funds and certification are on a separate contract, but for the data structure and the logic, we are sure that we will have to change many things on the future, so we keep things simple and cheaper in gas by having logic and data in the smart contract.    
-If someone register a point on the contract and we deploy a new version, we will manually load all the active point on the new smart contract.
+Upgradable VS non-upgradable    
+Some of these smart contracts may not be upgradable, only the funds and certification are due to reside on a separate contract which is upgrable, but for the data structure and the logic, we believe that many changes will come into play, so we keep things simple and cheaper in gas by having logic and data in the smart contract.    
+If someone registers a new point of Sale (POS) on the outdated contract during migration phase, a manual load with all deltas may have to be reprocessed onto the new smart contract.
 
 ## Getting Started
 
@@ -92,17 +96,18 @@ truffle install bytes
 Coming soon
 
 ## Function call
+
 ### Register a shop or a teller
 You need to call:
 `function transfer(address _to, uint _value, bytes _data) public returns (bool);`
-Of the AMIS contract with the address of dether core as a parameter
+Of the AMIS contract with the address of AmishopCore as a parameter
 
 #### Inputs
 
-* `address _to`: DetherCore address
+* `address _to`: AmishopCore address
 * `uint _value`: At least the licence price for your zone
 * `bytes _data`: Formatted list of arguments
-* FOR SHOP
+* Data classification for shops, stores, retailers and Point of Sale:
 
 | PARAM       | BYTES NUMBERS | value                                                                                                                                                                                                    | value in hex                                                     |
 |-------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -118,7 +123,7 @@ Of the AMIS contract with the address of dether core as a parameter
 
 So the final `_data` parameter will looks like:
 0x3100496E39000386BB47494758313120314141000000000000000072657374617572616e74000000000000436f6f6c204a6f620000000000000000492073656c6c20636f6f6c207468696e677320666f7220455448000000000000
-this hex string will be parsed on the fallback fonction of the DetherCore
+this hex string will be parsed on the fallback fonction of the AmishopCore
 
 * FOR TELLER
 
@@ -168,7 +173,7 @@ You need to have an .env files with valid mnemonic phrase with ETH:
 ```
 MNEMONIC = "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx"
 ```
-Then deploy (on kovan):
+Then deploy (on kovan, ropsten):
 ```
 truffle migrate --network kovan
 ```
