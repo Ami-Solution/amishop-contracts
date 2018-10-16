@@ -1,4 +1,4 @@
-pragma solidity ^0.4.21;
+pragma solidity ^0.4.25;
 
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 import './zepellin/SafeMath.sol';
@@ -52,14 +52,14 @@ contract DetherBank is ERC223ReceivingContract, Ownable, SafeMath, DateTime {
     dthTellerBalance[_receiver] = 0;
     require(dth.transfer(_receiver, tosend));
   }
-  // withdraw DTH when shop delete
+  // withdraw AMIS when shop delete
   function withdrawDthShop(address _receiver) external onlyOwner  {
     require(dthShopBalance[_receiver] > 0);
     uint tosend = dthShopBalance[_receiver];
     dthShopBalance[_receiver] = 0;
     require(dth.transfer(_receiver, tosend));
   }
-  // withdraw DTH when a shop add by admin is delete
+  // withdraw AMIS when a shop add by admin is delete
   function withdrawDthShopAdmin(address _from, address _receiver) external onlyOwner  {
     require(dthShopBalance[_from]  > 0);
     uint tosend = dthShopBalance[_from];
@@ -67,11 +67,11 @@ contract DetherBank is ERC223ReceivingContract, Ownable, SafeMath, DateTime {
     require(dth.transfer(_receiver, tosend));
   }
 
-  // add DTH when shop register
+  // add AMIS when shop register
   function addTokenShop(address _from, uint _value) external onlyOwner {
     dthShopBalance[_from] = SafeMath.add(dthShopBalance[_from], _value);
   }
-  // add DTH when token register
+  // add AMIS when token register
   function addTokenTeller(address _from, uint _value) external onlyOwner{
     dthTellerBalance[_from] = SafeMath.add(dthTellerBalance[_from], _value);
   }
