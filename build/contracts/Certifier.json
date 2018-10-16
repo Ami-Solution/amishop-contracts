@@ -1,0 +1,477 @@
+{
+  "contractName": "Certifier",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "who",
+          "type": "address"
+        }
+      ],
+      "name": "Confirmed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "who",
+          "type": "address"
+        }
+      ],
+      "name": "Revoked",
+      "type": "event"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_who",
+          "type": "address"
+        }
+      ],
+      "name": "certified",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "//! Certifier contract, taken from ethcore/sms-verification\n//!\n//! Copyright 2016 Gavin Wood, Parity Technologies Ltd.\n//!\n//! Licensed under the Apache License, Version 2.0 (the \"License\");\n//! you may not use this file except in compliance with the License.\n//! You may obtain a copy of the License at\n//!\n//!     http://www.apache.org/licenses/LICENSE-2.0\n//!\n//! Unless required by applicable law or agreed to in writing, software\n//! distributed under the License is distributed on an \"AS IS\" BASIS,\n//! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n//! See the License for the specific language governing permissions and\n//! limitations under the License.\n\npragma solidity ^0.4.17;\n\ncontract Certifier {\n\tevent Confirmed(address indexed who);\n\tevent Revoked(address indexed who);\n\tfunction certified(address _who) view public returns (bool);\n}\n",
+  "sourcePath": "/app/contracts/certifier/Certifier.sol",
+  "ast": {
+    "absolutePath": "/app/contracts/certifier/Certifier.sol",
+    "exportedSymbols": {
+      "Certifier": [
+        3715
+      ]
+    },
+    "id": 3716,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3699,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "691:24:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3715,
+        "linearizedBaseContracts": [
+          3715
+        ],
+        "name": "Certifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3703,
+            "name": "Confirmed",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3701,
+                  "indexed": true,
+                  "name": "who",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3703,
+                  "src": "755:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3700,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "755:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "754:21:7"
+            },
+            "src": "739:37:7"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3707,
+            "name": "Revoked",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3706,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3705,
+                  "indexed": true,
+                  "name": "who",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3707,
+                  "src": "792:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3704,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "792:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "791:21:7"
+            },
+            "src": "778:35:7"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3714,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "certified",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3710,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3709,
+                  "name": "_who",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3714,
+                  "src": "834:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3708,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "834:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "833:14:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3713,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3712,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3714,
+                  "src": "869:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3711,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "869:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "868:6:7"
+            },
+            "scope": 3715,
+            "src": "815:60:7",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3716,
+        "src": "717:160:7"
+      }
+    ],
+    "src": "691:187:7"
+  },
+  "legacyAST": {
+    "absolutePath": "/app/contracts/certifier/Certifier.sol",
+    "exportedSymbols": {
+      "Certifier": [
+        3715
+      ]
+    },
+    "id": 3716,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3699,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "691:24:7"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 3715,
+        "linearizedBaseContracts": [
+          3715
+        ],
+        "name": "Certifier",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3703,
+            "name": "Confirmed",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3702,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3701,
+                  "indexed": true,
+                  "name": "who",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3703,
+                  "src": "755:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3700,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "755:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "754:21:7"
+            },
+            "src": "739:37:7"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 3707,
+            "name": "Revoked",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 3706,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3705,
+                  "indexed": true,
+                  "name": "who",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3707,
+                  "src": "792:19:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3704,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "792:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "791:21:7"
+            },
+            "src": "778:35:7"
+          },
+          {
+            "body": null,
+            "documentation": null,
+            "id": 3714,
+            "implemented": false,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "certified",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3710,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3709,
+                  "name": "_who",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3714,
+                  "src": "834:12:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 3708,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "834:7:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "833:14:7"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3713,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 3712,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3714,
+                  "src": "869:4:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 3711,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "869:4:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "868:6:7"
+            },
+            "scope": 3715,
+            "src": "815:60:7",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3716,
+        "src": "717:160:7"
+      }
+    ],
+    "src": "691:187:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-10-16T07:35:52.830Z"
+}

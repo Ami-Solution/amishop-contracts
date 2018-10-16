@@ -1,0 +1,51 @@
+{
+  "name": "amishop-contracts",
+  "version": "2.0.0",
+  "description": "AmiShop provides a decentralized peer-to-peer ether network that enables anyone on Earth to buy ether with cash and spend it at physical stores nearby.",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/truffle test",
+    "testKovanInfura": "node_modules/.bin/truffle test --network kovanInfura",
+    "start1": "node_modules/.bin/truffle migrate --reset",
+    "migrateKovanInfura": "node_modules/.bin/truffle migrate --network kovanInfura --reset",
+    "esdoc": "./node_modules/.bin/esdoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ami-solution/amishop-contracts.git"
+  },
+  "author": "Dether's team <hello@dether.io> (https://github.com/ami-solution)",
+  "contributors": [
+    "Amisolution(https://github.com/amisolution)",
+    "Mehdi Amari <mehdi@dether.io> (https://github.com/dethertech)",
+    "Stéphane Roche <rochestephane@yahoo.fr> (https://github.com/Janaka-Steph)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ami-solution/amishop-contracts/issues"
+  },
+  "dependencies": {
+    "ethereum-datetime": "^1.0.0",
+    "fs": "0.0.1-security",
+    "papaparse": "^4.3.7",
+    "truffle-hdwallet-provider": "0.0.3",
+    "truffle-privatekey-provider": "^0.1.0",
+    "web3": "^1.0.0-beta.34",
+    "web3-eth-abi": "^1.0.0-beta.33",
+    "zeppelin-solidity": "1.6.0"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-html": "^3.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eth-gas-reporter": "^0.1.1",
+    "ethereumjs-abi": "^0.6.4",
+    "ethers": "^2.1.3",
+    "truffle": "^4.1.5"
+  }
+}
