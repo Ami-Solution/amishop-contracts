@@ -43,7 +43,7 @@ This smart contract is supposed to be used just like that by the most Dapps poss
 We keep moderator roles contralised for now, but we will use decentralised arbitration court later to be able to delete illegal shop for example.    
 To be able to register a shop or a teller, the ethereum user need to be `certified` we keep this role centralised as well for now but we'll use decentralised KYC services like uport soon.    
 To be certified user will either need to register their phone, or pass KYC.    
-To operate on a zone a shop or a teller will need to stake DTH. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by a moderator in a centralised way.    
+To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by a moderator in a centralised way.    
 Centralised moderator role in the V0.1:   
 -Set the licence price.
 -Delete fraudulent shop/teller.    
@@ -95,7 +95,7 @@ Coming soon
 ### Register a shop or a teller
 You need to call:
 `function transfer(address _to, uint _value, bytes _data) public returns (bool);`
-Of the DTH contract with the address of dether core as a parameter
+Of the AMIS contract with the address of dether core as a parameter
 
 #### Inputs
 
@@ -182,6 +182,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 
 * **Mehdi Amari** - [Fukunaga42](https://github.com/Fukunaga42)
 * **Stéphane Roche** - [Janaka-Steph](https://github.com/Janaka-Steph)
+* **Amisolution** - [Amisolution](https://github.com/amisolution)
 
 ## License
 
