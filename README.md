@@ -100,14 +100,14 @@ Coming soon
 ### Register a shop or a teller
 You need to call:
 `function transfer(address _to, uint _value, bytes _data) public returns (bool);`
-Of the AMIS contract with the address of dether core as a parameter
+Of the AMIS contract with the address of AmishopCore as a parameter
 
 #### Inputs
 
-* `address _to`: DetherCore address
+* `address _to`: AmishopCore address
 * `uint _value`: At least the licence price for your zone
 * `bytes _data`: Formatted list of arguments
-* FOR SHOP
+* Data classification for shops, stores, retailers and Point of Sale:
 
 | PARAM       | BYTES NUMBERS | value                                                                                                                                                                                                    | value in hex                                                     |
 |-------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -123,7 +123,7 @@ Of the AMIS contract with the address of dether core as a parameter
 
 So the final `_data` parameter will looks like:
 0x3100496E39000386BB47494758313120314141000000000000000072657374617572616e74000000000000436f6f6c204a6f620000000000000000492073656c6c20636f6f6c207468696e677320666f7220455448000000000000
-this hex string will be parsed on the fallback fonction of the DetherCore
+this hex string will be parsed on the fallback fonction of the AmishopCore
 
 * FOR TELLER
 
@@ -173,7 +173,7 @@ You need to have an .env files with valid mnemonic phrase with ETH:
 ```
 MNEMONIC = "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx"
 ```
-Then deploy (on kovan):
+Then deploy (on kovan, ropsten):
 ```
 truffle migrate --network kovan
 ```
