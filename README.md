@@ -2,6 +2,8 @@
 
 [![Join the chat at https://gitter.im/erc20-amis/Lobby](https://badges.gitter.im/ami-solution/amishop.svg)](https://gitter.im/erc20-amis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me)
+
 ### Version 0.1.0b    
 This version is the MVP version, its not suppose to reflect our entire version describe in our white paper.    
 What this version is supposed to do:    
@@ -42,10 +44,11 @@ function getShop(address _shop) public view returns (
 This smart contract is supposed to be used just like that by the most Dapps possible to show their user where they could spend their crypto or buy or sell cryptos.    
 We keep moderator roles contralised for now, but we will use decentralised arbitration court later to be able to delete illegal shop for example.    
 To be able to register a shop or a teller, the ethereum user need to be `certified` we keep this role centralised as well for now but we'll use decentralised KYC services like uport soon.    
-To be certified user will either need to register their phone, or pass KYC.    
-To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by a moderator in a centralized way.    
-Centralized moderator role in the v0.1.0b release: 
+To become a certified subscriber will either need to register their phone, or pass KYC.    
+To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by the free decentralized marketplace as exposed in all the exchange offering Amis.    
 
+* The role of a Centralized moderator will be introduced with the v0.1.0b release: 
+**Main features:**
 -Set the licence price.
 -Delete fraudulent shop/teller.    
 -Open/close zone (country).    
@@ -56,7 +59,7 @@ To be integrated on the futures versions:
 -Affiliate/referal program   
 -Auction system on zone and category.  
 -Dynamic licence pricing    
--Decentralised moderation.    
+-Decentralized moderation.    
 -Decentralized KYC    
 
 Upgradable VS non-upgradable    
@@ -93,6 +96,7 @@ truffle install bytes
 Coming soon
 
 ## Function call
+
 ### Register a shop or a teller
 You need to call:
 `function transfer(address _to, uint _value, bytes _data) public returns (bool);`
