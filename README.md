@@ -44,7 +44,7 @@ We keep moderator roles contralised for now, but we will use decentralised arbit
 To be able to register a shop or a teller, the ethereum user need to be `certified` we keep this role centralised as well for now but we'll use decentralised KYC services like uport soon.    
 To be certified user will either need to register their phone, or pass KYC.    
 To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by a moderator in a centralized way.    
-Centralized moderator role in the v0.1.0 release: 
+Centralized moderator role in the v0.1.0b release: 
 
 -Set the licence price.
 -Delete fraudulent shop/teller.    
@@ -59,9 +59,9 @@ To be integrated on the futures versions:
 -Decentralised moderation.    
 -Decentralized KYC    
 
-Upgradable VS unpgradable    
-Those smart contracts are unupgradable, only the funds and certification are on a separate contract, but for the data structure and the logic, we are sure that we will have to change many things on the future, so we keep things simple and cheaper in gas by having logic and data in the smart contract.    
-If someone register a point on the contract and we deploy a new version, we will manually load all the active point on the new smart contract.
+Upgradable VS non-upgradable    
+Some of these smart contracts may not be upgradable, only the funds and certification are due to reside on a separate contract which is upgrable, but for the data structure and the logic, we believe that many changes will come into play, so we keep things simple and cheaper in gas by having logic and data in the smart contract.    
+If someone registers a new point of Sale (POS) on the outdated contract during migration phase, a manual load with all deltas may have to be reprocessed onto the new smart contract.
 
 ## Getting Started
 
