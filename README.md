@@ -2,7 +2,10 @@
 
 [![Join the chat at https://gitter.im/erc20-amis/Lobby](https://badges.gitter.im/ami-solution/amishop.svg)](https://gitter.im/erc20-amis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me)
+* Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me)
+
+* Kovan AmishopCore: [https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code](https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code)
+* Kovan SmsCertifier: [https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code](https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code)
 
 ### Version 0.1.0b    
 This version is the MVP version, its not suppose to reflect our entire version describe in our white paper.    
