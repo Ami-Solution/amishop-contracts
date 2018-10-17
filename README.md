@@ -11,7 +11,7 @@
 &nbsp;[![αtesting EthenMarket](https://img.shields.io/badge/αtesting-ethenmarket-lightgrey.svg)](https://ethen.market/949bed886c739f1a3273629b3320db0c5024c719)&nbsp;[![ßtesting AmisDex](https://img.shields.io/badge/ßtesting-amisdex-lightblue.svg)](https://amisdex.github.io/amis-exchange-www)
 
 
-**[https://https://amishop.glitch.me](https://amishop.glitch.me)**
+**[https://amishop.glitch.me](https://amishop.glitch.me)**
 
 
 What is AmiShop ?
