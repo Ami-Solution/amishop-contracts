@@ -20,22 +20,6 @@ What is AmiShop ?
 
 [![Join the chat at https://gitter.im/erc20-amis/Lobby](https://badges.gitter.im/ami-solution/amishop.svg)](https://gitter.im/erc20-amis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me) 
-
-## AmishopToken
-* Kovan: [https://kovan.etherscan.io/address/0xac8aa3fa1b3b1a61af92c5e609934910c516204d](https://kovan.etherscan.io/address/0xac8aa3fa1b3b1a61af92c5e609934910c516204d)
-
-## AmisBank
-* Kovan
-[https://kovan.etherscan.io/address/0xff1e3d4e56d55e02cb9118e17eedb79a454ff967#code](https://kovan.etherscan.io/address/0xff1e3d4e56d55e02cb9118e17eedb79a454ff967#code)
-
-## AmishopCore
-* Kovan [https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code](https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code)
-* Ropsten
-https://ropsten.etherscan.io/tx/0x935265d30a9558034cc1af196d71e35f1b3843cb7561d46208e8b67f0972ed45
-
-## SmsCertifier
-* Kovan [https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code](https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code)
 
 
 ### Version 0.1.0b    
