@@ -1,0 +1,29 @@
+[
+  {
+    "constant":true,
+    "inputs":[{"name":"ipfsNum","type":"uint256"}],
+    "name":"ipfsGet",
+    "outputs":[{"name":"","type":"string"}],
+    "payable":false,
+    "stateMutability":"view",
+    "type":"function"
+  },
+  {
+    "constant":false,
+    "inputs":[{"name":"ipfsHash","type":"string"}],
+    "name":"ipfsSet",
+    "outputs":[],
+    "payable":false,
+    "stateMutability":"nonpayable",
+    "type":"function"
+  },
+  {
+    "constant":true,
+    "inputs":[{"name":"","type":"uint256"}],
+    "name":"ipfsToNumber",
+    "outputs":[{"name":"","type":"string"}],
+    "payable":false,
+    "stateMutability":"view",
+    "type":"function"
+  }
+]
