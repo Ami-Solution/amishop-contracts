@@ -11,30 +11,30 @@
 &nbsp;[![αtesting EthenMarket](https://img.shields.io/badge/αtesting-ethenmarket-lightgrey.svg)](https://ethen.market/949bed886c739f1a3273629b3320db0c5024c719)&nbsp;[![ßtesting AmisDex](https://img.shields.io/badge/ßtesting-amisdex-lightblue.svg)](https://amisdex.github.io/amis-exchange-www)
 
 
-**[https://https://amishop.glitch.me)](https://amishop.glitch.me))**
+**[https://https://amishop.glitch.me](https://amishop.glitch.me)**
 
 
 What is AmiShop ?
 
-# AmiShop - Ethereum smart contracts
+# AmiShop -  Smart contracts for shopping with Ethereum and Amis.
 
 [![Join the chat at https://gitter.im/erc20-amis/Lobby](https://badges.gitter.im/ami-solution/amishop.svg)](https://gitter.im/erc20-amis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me) 
 
-##AmishopToken
+## AmishopToken
 * Kovan: [https://kovan.etherscan.io/address/0xac8aa3fa1b3b1a61af92c5e609934910c516204d](https://kovan.etherscan.io/address/0xac8aa3fa1b3b1a61af92c5e609934910c516204d)
 
-##AmisBank
+## AmisBank
 * Kovan
 [https://kovan.etherscan.io/address/0xff1e3d4e56d55e02cb9118e17eedb79a454ff967#code](https://kovan.etherscan.io/address/0xff1e3d4e56d55e02cb9118e17eedb79a454ff967#code)
 
-##AmishopCore
+## AmishopCore
 * Kovan [https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code](https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code)
 * Ropsten
 https://ropsten.etherscan.io/tx/0x935265d30a9558034cc1af196d71e35f1b3843cb7561d46208e8b67f0972ed45
 
-##SmsCertifier
+## SmsCertifier
 * Kovan [https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code](https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code)
 
 
@@ -82,7 +82,7 @@ To become a certified subscriber will either need to register their phone, or pa
 To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by the free decentralized marketplace as exposed in all the exchange offering Amis.    
 
 * The role of a Centralized moderator will be introduced with the v0.1.0b release: 
-**Main features:**
+**Main actions:**
 -Set the licence price.
 -Delete fraudulent shop/teller.    
 -Open/close zone (country).    
