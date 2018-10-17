@@ -4,7 +4,7 @@
     {
       "constant": true,
       "inputs": [],
-      "name": "dth",
+      "name": "amishop",
       "outputs": [
         {
           "name": "",
@@ -115,7 +115,7 @@
           "type": "address"
         }
       ],
-      "name": "dthTellerBalance",
+      "name": "amishopTellerBalance",
       "outputs": [
         {
           "name": "",
@@ -302,7 +302,7 @@
           "type": "address"
         }
       ],
-      "name": "dthShopBalance",
+      "name": "amishopShopBalance",
       "outputs": [
         {
           "name": "",
@@ -473,7 +473,7 @@
           "type": "uint256"
         }
       ],
-      "name": "receiveDth",
+      "name": "receiveAmishop",
       "type": "event"
     },
     {
@@ -507,7 +507,7 @@
           "type": "uint256"
         }
       ],
-      "name": "sendDth",
+      "name": "sendAmishop",
       "type": "event"
     },
     {
@@ -548,11 +548,11 @@
       "constant": false,
       "inputs": [
         {
-          "name": "_dth",
+          "name": "_amishop",
           "type": "address"
         }
       ],
-      "name": "setDth",
+      "name": "setAmishop",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -566,7 +566,7 @@
           "type": "address"
         }
       ],
-      "name": "withdrawDthTeller",
+      "name": "withdrawAmishopTeller",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -580,7 +580,7 @@
           "type": "address"
         }
       ],
-      "name": "withdrawDthShop",
+      "name": "withdrawAmishopShop",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -598,7 +598,7 @@
           "type": "address"
         }
       ],
-      "name": "withdrawDthShopAdmin",
+      "name": "withdrawAmishopShopAdmin",
       "outputs": [],
       "payable": false,
       "stateMutability": "nonpayable",
@@ -726,7 +726,7 @@
           "type": "address"
         }
       ],
-      "name": "getDthShop",
+      "name": "getAmishopShop",
       "outputs": [
         {
           "name": "",
