@@ -1,15 +1,15 @@
 
 const DetherCore = artifacts.require('./AmishopCore.sol');
 const DetherBank = artifacts.require('./AmisBank.sol');
-const DetherToken = artifacts.require('./dth/AMIS.sol');
+const DetherToken = artifacts.require('./dth/Amishop.sol');
 const SmsCertifier = artifacts.require('./certifier/SmsCertifier.sol');
 const KycCertifier = artifacts.require('./certifier/KycCertifier.sol');
 const ExchangeRateOracle = artifacts.require('./ExchangeRateOracle.sol');
 
-const ceoDether = "0x2C0Da9671c8021E48DA17aC3fAbc680d6839f3cf";
-const cmoDether = "0x83290383aD087ca79FE13C251949B2964F5BA5da";
-const cfoDether = "0x83290383aD087ca79FE13C251949B2964F5BA5da";
-const csoDether = "0x83290383aD087ca79FE13C251949B2964F5BA5da";
+const ceoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
+const cmoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
+const cfoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
+const csoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
 
 const kycDelegate = '0xE7dFb797D9A18D62029a0EA2db40d12073928152';
 const initScript = '0xE384850C8B9f1009d81C7657db179172b6C648D8';

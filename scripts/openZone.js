@@ -1,10 +1,10 @@
 const fs = require('fs');
 const Papa = require('papaparse');
-const DetherCore = artifacts.require('DetherCore');
-const DetherToken = artifacts.require('DetherToken');
+const DetherCore = artifacts.require('AmishopCore');
+const DetherToken = artifacts.require('AmishopToken');
 
-// require message sender is certifer, CSO, ADD ENOUGH DTH
-const cmo = '0x1ecb59E6EAb86eCdE351229e64E47dD6B65b9329'
+// require message sender is certifer, CSO, ADD ENOUGH AMISHOP
+const cmo = '0x58E3fC68696c75245200EfE0551b969d6E5046Cf'
 
 
 const toNBytes = (str, n) => {
