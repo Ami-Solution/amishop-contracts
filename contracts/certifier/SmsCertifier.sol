@@ -1,22 +1,38 @@
-//! The SMS-verification contract
-//!
-//! Copyright 2017 Gavin Wood, Parity Technologies Ltd.
-//!
-//! Licensed under the Apache License, Version 2.0 (the "License");
-//! you may not use this file except in compliance with the License.
-//! You may obtain a copy of the License at
-//!
-//!     http://www.apache.org/licenses/LICENSE-2.0
-//!
-//! Unless required by applicable law or agreed to in writing, software
-//! distributed under the License is distributed on an "AS IS" BASIS,
-//! WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//! See the License for the specific language governing permissions and
-//! limitations under the License.
+contract Ownable {
+  address public owner;
 
-pragma solidity ^0.4.25;
 
-import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
+  event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
+
+
+  /**
+   * @dev The Ownable constructor sets the original `owner` of the contract to the sender
+   * account.
+   */
+  function Ownable() public {
+    owner = msg.sender;
+  }
+
+  /**
+   * @dev Throws if called by any account other than the owner.
+   */
+  modifier onlyOwner() {
+    require(msg.sender == owner);
+    _;
+  }
+
+  /**
+   * @dev Allows the current owner to transfer control of the contract to a newOwner.
+   * @param newOwner The address to transfer ownership to.
+   */
+  function transferOwnership(address newOwner) public onlyOwner {
+    require(newOwner != address(0));
+    OwnershipTransferred(owner, newOwner);
+    owner = newOwner;
+  }
+
+}
+
 
 contract SmsCertifier is Ownable {
 	event Confirmed(address indexed who);

@@ -1,21 +1,21 @@
 
 const DetherCore = artifacts.require('./AmishopCore.sol');
 const DetherBank = artifacts.require('./AmisBank.sol');
-const DetherToken = artifacts.require('./dth/AMIS.sol');
+const DetherToken = artifacts.require('./dth/Amishop.sol');
 const SmsCertifier = artifacts.require('./certifier/SmsCertifier.sol');
 const KycCertifier = artifacts.require('./certifier/KycCertifier.sol');
 const ExchangeRateOracle = artifacts.require('./ExchangeRateOracle.sol');
 
 const ceoDether = "0xC5F8a06ed1CfB17d0366eF03FEDF37568B0ce246";
-const ownerCertifier = "0xC5F8a06ed1CfB17d0366eF03FEDF37568B0ce246";
-const cmoDether = "0xC5F8a06ed1CfB17d0366eF03FEDF37568B0ce246";
-const cfoDether = "0xC5F8a06ed1CfB17d0366eF03FEDF37568B0ce246";
-const csoDether = "0xC5F8a06ed1CfB17d0366eF03FEDF37568B0ce246";
+const ownerCertifier = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
+const cmoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
+const cfoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
+const csoDether = "0x3D48587aA16D91a2e37198B5B428674bDADdf038";
 
-const kycDelegateTestnet = '0x32BedF6609f002A591f871009C8e66D84F98d48E';
-const initScript = '0x391edA1b8D31f891d1653B131779751BdeDA24D3';
+const kycDelegateTestnet = '0x58E3fC68696c75245200EfE0551b969d6E5046Cf';
+const initScript = '0x58E3fC68696c75245200EfE0551b969d6E5046Cf';
 
-const ownerdeploy = "0x6AAb2B0913B70270E840B14c2b23B716C0a43522"
+const ownerdeploy = "0x58E3fC68696c75245200EfE0551b969d6E5046Cf"
 
 module.exports = async (callback) => {
 
