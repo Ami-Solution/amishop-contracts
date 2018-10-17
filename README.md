@@ -1,13 +1,26 @@
-# AmiShop - Ethereum smart contracts
+<img align="left" src="https://raw.githubusercontent.com/amisolution/ERC20-AMIS/master/amis-logo3.png" alt="amis-logo3"/>
+<img align="right" src="https://raw.githubusercontent.com/amisolution/ERC20-AMIS/master/images/AMIS-QRCODE.png" alt="AMIS-QRCODE" width="100"/>
+
+[![Website Down](https://img.shields.io/badge/website-down-red.svg)](http://erc20-amis.amisolution.net/)&nbsp;
+[![Join the Gitchat at https://gitter.im/amis-delta-dex/Lobby](https://badges.gitter.im/amis-delta-dex/Lobby.svg)](https://gitter.im/AMIS-DELTA-DEX/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)&nbsp;[![Trade Bounty](https://img.shields.io/badge/trade-bounty-orange.svg)](https://github.com/amisolution/ERC20-AMIS/issues/)&nbsp;[![Twitter AirDrop](https://img.shields.io/badge/Twitter-Airdrop-red.svg)](https://twitter.com/AMIStoken_ERC20)&nbsp;[![Official Twitter](https://img.shields.io/badge/official-twitter-brightgreen.svg)](https://twitter.com/amis_erc20)&nbsp;[![Official AmisForkdelta](https://img.shields.io/badge/official-forkdelta-brightgreen.svg)](https://forkdelta.app/#!/trade/0x949bed886c739f1a3273629b3320db0c5024c719-ETH)
+&nbsp;[![Official AmisEtherDelta](https://img.shields.io/badge/official-etherdelta-brightgreen.svg)](https://etherdelta.com/#0x949bed886c739f1a3273629b3320db0c5024c719-ETH)
+&nbsp;[![Official BambooRelay](https://img.shields.io/badge/official-bamboorelay-brightgreen.svg)](https://bamboorelay.com/trade/AMIS-WETH)&nbsp;[![Official AmisTokenJar](https://img.shields.io/badge/official-tokenjar-brightgreen.svg)](https://tokenjar.io/amis)
+&nbsp;[![ßtesting Dubiex](https://img.shields.io/badge/ßtesting-dubiex-yellow.svg)](https://dubiex.com/AMIS/ETH)&nbsp;[![Official AmisLedgerDex](https://img.shields.io/badge/official-ledgerdex-1330e3.svg)](https://app.ledgerdex.com/#/app/orders/maker-taker/AMIS/0x949bed886c739f1a3273629b3320db0c5024c719/WETH/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2
+)&nbsp;[![Official Cryptoderivatives](https://img.shields.io/badge/official-cryptoderivatives-4330e7.svg)](https://cryptoderivatives.market/token/AMIS)&nbsp;[![Official Cryptocompare](https://img.shields.io/badge/official-cryptocompare-brightgreen.svg)](https://www.cryptocompare.com/coins/amis)&nbsp;[![Official DexTracker](https://img.shields.io/badge/official-dextracker-brightgreen.svg)](https://etherscan.io/dextracker?filter=&q=AMIS)
+&nbsp;[![ßtesting TokenStore](https://img.shields.io/badge/ßtesting-TokenStore-yellow.svg)](https://token.store/trade/0x949bed886c739f1a3273629b3320db0c5024c719)
+&nbsp;[![αtesting EthenMarket](https://img.shields.io/badge/αtesting-ethenmarket-lightgrey.svg)](https://ethen.market/949bed886c739f1a3273629b3320db0c5024c719)&nbsp;[![ßtesting AmisDex](https://img.shields.io/badge/ßtesting-amisdex-lightblue.svg)](https://amisdex.github.io/amis-exchange-www)
+
+
+**[https://amishop.glitch.me](https://amishop.glitch.me)**
+
+
+What is AmiShop ?
+
+# AmiShop -  Smart contracts for shopping with Ethereum and Amis.
 
 [![Join the chat at https://gitter.im/erc20-amis/Lobby](https://badges.gitter.im/ami-solution/amishop.svg)](https://gitter.im/erc20-amis/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-* Try the demo here: [https://amishop-contracts.glitch.me](https://amishop-contracts.glitch.me)
 
-* Ropsten AmishopCore: [https://ropsten.etherscan.io/tx/0x935265d30a9558034cc1af196d71e35f1b3843cb7561d46208e8b67f0972ed45](https://ropsten.etherscan.io/tx/0x935265d30a9558034cc1af196d71e35f1b3843cb7561d46208e8b67f0972ed45)
-
-* Kovan AmishopCore: [https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code](https://kovan.etherscan.io/address/0x347fdbb9b93f9d42fa1d34cffda68439a5a422c9#code)
-* Kovan SmsCertifier: [https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code](https://kovan.etherscan.io/address/0xd8f99f161e107a5a7decca7a215a380d72b52616#code)
 
 ### Version 0.1.0b    
 This version is the MVP version, its not suppose to reflect our entire version describe in our white paper.    
@@ -53,7 +66,7 @@ To become a certified subscriber will either need to register their phone, or pa
 To operate on a zone a shop or a teller will need to stake AMIS. The price will differ among zone and will be automatically calculated by the smart contract regarding different parameter like localisation, number of teller or shop already present. For now the price a user need to stake is set by the free decentralized marketplace as exposed in all the exchange offering Amis.    
 
 * The role of a Centralized moderator will be introduced with the v0.1.0b release: 
-**Main features:**
+**Main actions:**
 -Set the licence price.
 -Delete fraudulent shop/teller.    
 -Open/close zone (country).    
