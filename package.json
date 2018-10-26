@@ -1,13 +1,14 @@
 {
   "name": "amishop-contracts",
   "version": "2.0.0",
-  "description": "AmiShop provides means to build a decentralized shopping ecosystem where anyone can buy ether and/or amis with cash and spend it at physical stores, shops and POS nearby.",
+  "description": "AmiShop provides a decentralized peer-to-peer ether network that enables anyone on Earth to buy ether with cash and spend it at physical stores nearby.",
   "main": "truffle.js",
+
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "start2": "node_modules/.bin/truffle test",
+    "start2": "node_modules/.bin/truffle serve",
     "testKovanInfura": "node_modules/.bin/truffle test --network kovanInfura",
     "start": "node_modules/.bin/truffle migrate --reset",
     "migrateKovanInfura": "node_modules/.bin/truffle migrate --network kovanInfura --reset",

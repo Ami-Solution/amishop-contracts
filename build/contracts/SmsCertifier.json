@@ -5774,29 +5774,29 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "v0.4.25+commit.59dbf8f1.Emscripten.clang"
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
     "1": {
       "events": {},
       "links": {},
-      "address": "0xd8f99f161e107a5a7decca7a215a380d72b52616"
+      "address": "0x9e282120e0820787085fd9914c6f36cc73631476"
     },
     "3": {
       "events": {},
       "links": {},
-      "address": "0xd8f99f161e107a5a7decca7a215a380d72b52616"
+      "address": "0xabc889a79e0c2dfdc8c3d952cd52cf1a3bf983dc"
     },
     "4": {
       "events": {},
       "links": {},
-      "address": "0xd8f99f161e107a5a7decca7a215a380d72b52616"
+      "address": "0x63724d0d088858fb09d226bb97e9e3db4dcb00a0"
     },
     "42": {
       "events": {},
       "links": {},
-      "address": "0xd8f99f161e107a5a7decca7a215a380d72b52616",
-      "transactionHash": "0xf30e9cff3b28cf4719838b35b45c6b5db606b5c6e604140cd0d1767191ba85fc"
+      "address": "0x4ee1f732e64826b616cd80b5fff3c6bce54b7035",
+      "transactionHash": "0xf4f8437ac4c0ddef40b5183d0137def4b1c5d4053d1f365f5dff3bf95ace1178"
     }
   },
   "schemaVersion": "2.0.1",
